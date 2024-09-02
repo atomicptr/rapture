@@ -1,6 +1,6 @@
 CompileFlags:
 	Add &flags:
-		- -std=c++26
+		- -std=c++23
 		- -Wpedantic
 		- -Wall
 		- -Wextra

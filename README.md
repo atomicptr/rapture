@@ -8,7 +8,8 @@ This library makes use of std::print, std::format and std::source_location so ma
 
 - assert(condition, message) - If the condition fails, crashes the program with message
 - panic(message) - Crashes the program with message
-- unreachable() - Crashes the program with message, use to make sure unreachable code sections will not be run
+- unreachable() - Crashes the program with message, used to make sure unreachable code sections will not be run
+- unimplemented() - Crashes the program with message, used to mark certain code paths as unimplemented
 
 See How to use section or examples
 
@@ -91,6 +92,20 @@ int main() {
 
 </details>
 
+<details>
+<summary>Example: unimplemented</summary>
+
+```cpp
+void solve_every_problem_in_the_universe() {
+    unimplemented();
+}
+
+int main(void) {
+    solve_every_problem_in_the_universe();
+}
+````
+
+</details>
 
 ## License
 

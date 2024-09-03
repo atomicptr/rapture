@@ -7,6 +7,7 @@ This library makes use of std::print, std::format and std::source_location so ma
 ## Provides
 
 - assert(condition, message) - If the condition fails, crashes the program with message
+- expect(condition) - Assert but without message
 - panic(message) - Crashes the program with message
 - unreachable() - Crashes the program with message, used to make sure unreachable code sections will not be run
 - unimplemented() - Crashes the program with message, used to mark certain code paths as unimplemented
@@ -33,6 +34,27 @@ int main() {
     // this assertion is wrong -> hence the program will crash
     auto c = 2;
     assert(c + c == 5, "{} + {} should be {}", c, c, 5);
+
+    return 0;
+}
+```
+
+</details>
+
+<details>
+<summary>Example: expect</summary>
+
+```cpp
+int main() {
+    auto a = 5;
+    auto b = 7;
+
+    // this expection is correct -> will continue
+    expect(a + b == 12);
+
+    // this expection is wrong -> hence the program will crash
+    auto c = 2;
+    expect(c + c == 5);
 
     return 0;
 }

@@ -6,7 +6,7 @@ RED='\033[0;31m'
 GREEN='\033[0;32m'
 NC='\033[0m'
 
-for file in ./examples/*.cpp; do
+for file in ./tests/*.cpp; do
     executable="./bin/$(basename "${file%.*}").out"
     g++ -std=c++23 "$file" -o "$executable"
 

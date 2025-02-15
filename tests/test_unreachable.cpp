@@ -15,7 +15,7 @@ void print_state(State s) {
         std::println("State::B");
         return;
     default: // never added here though...
-        unreachable();
+        rpt_unreachable();
     }
 }
 

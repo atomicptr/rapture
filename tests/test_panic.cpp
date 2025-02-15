@@ -2,7 +2,7 @@
 
 int safeDiv(int a, int b) {
     if (b == 0) {
-        panic("can't divide by zero");
+        rpt_panic("can't divide by zero");
     }
 
     return a / b;

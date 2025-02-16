@@ -9,10 +9,10 @@ enum class State {
 void print_state(State s) {
     switch (s) {
     case State::A:
-        std::println("State::A");
+        xyz::println("State::A");
         return;
     case State::B:
-        std::println("State::B");
+        xyz::println("State::B");
         return;
     default: // never added here though...
         rpt_unreachable();

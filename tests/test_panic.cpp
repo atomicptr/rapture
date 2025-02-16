@@ -9,6 +9,6 @@ int safeDiv(int a, int b) {
 }
 
 int main() {
-    std::println("{} / {} = {}", 10, 2, safeDiv(10, 2));
-    std::println("{} / {} = {}", 10, 0, safeDiv(10, 0));
+    xyz::println("{} / {} = {}", 10, 2, safeDiv(10, 2));
+    xyz::println("{} / {} = {}", 10, 0, safeDiv(10, 0));
 }
